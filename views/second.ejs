@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div id="heading">
+        <h4>Arpit wishes you</h4>
+        <h1 class="wish"><i class="fa-solid fa-gift"></i> Happy New Year <%= output %> <i class="fa-regular fa-handshake"></i></h1>
+    </div>
+
+<script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+<script> 
+    window.onload = () => {
+        const jsConfetti = new JSConfetti()
+         jsConfetti.addConfetti()
+
+         var audio = new Audio('sound/happy.mp3');
+         audio.play();
+    }
+</script>
+    
+</body>
+</html>
